@@ -49,5 +49,6 @@ while True:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
+                break  # break out of the loop after selecting a random response
     else:
         print(f"{bot_name}: I do not understand...")
