@@ -1,0 +1,841 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hii",
+        "Hey",
+        "How's it going?",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey! :-)",
+        "Hello, nice to see you!",
+        "Hi there, what's up?",
+        "Hi there, how can I assist you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, have a great day!",
+        "Goodbye! Take care.",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Appreciate it", "Thank's a lot!"],
+      "responses": ["You're welcome!", "Anytime! Happy to help.", "My pleasure"]
+    },
+    {
+      "tag": "information",
+      "patterns": [
+        "Tell me about yourself",
+        "What can you do?",
+        "Who created you?"
+      ],
+      "responses": [
+        "I am a chatbot designed to assist you.",
+        "I can help you with a variety of topics.",
+        "I was created by a team of developers at XYZ Company."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like today?",
+        "Tell me the weather forecast",
+        "Is it going to rain?"
+      ],
+      "responses": [
+        "I'm sorry, I don't have real-time weather information.",
+        "You might want to check a weather website or app for accurate updates."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest technology",
+        "What's new in tech?",
+        "Any interesting tech news?"
+      ],
+      "responses": [
+        "There are exciting advancements in AI, robotics, and more.",
+        "The tech world is buzzing with innovations. Anything specific you're interested in?"
+      ]
+    },
+    {
+      "tag": "random",
+      "patterns": [
+        "Tell me something random",
+        "Surprise me",
+        "Share a fun fact"
+      ],
+      "responses": [
+        "Bananas are berries, but strawberries aren't.",
+        "The shortest war in history was between Britain and Zanzibar in 1896, lasting only 38 minutes."
+      ]
+    },
+    {
+      "tag": "movies",
+      "patterns": [
+        "What's your favorite movie?",
+        "Recommend a good film",
+        "Tell me a movie joke"
+      ],
+      "responses": [
+        "I don't watch movies, but I've heard 'The Matrix' is a classic.",
+        "How about watching 'Inception' for a mind-bending experience?",
+        "Why did the movie file go to therapy? It had too many issues!"
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "What's your favorite music genre?",
+        "Recommend a song",
+        "Tell me a music joke"
+      ],
+      "responses": [
+        "I enjoy all genres, but I don't have a favorite.",
+        "Listen to 'Bohemian Rhapsody' by Queen if you haven't already!",
+        "Why did the music teacher go to jail? Because she got caught with excessive sharp objects!"
+      ]
+    },
+    {
+      "tag": "food",
+      "patterns": [
+        "What's your favorite food?",
+        "Recommend a restaurant",
+        "Tell me a food joke"
+      ],
+      "responses": [
+        "I don't eat, but I hear pizza is a popular choice!",
+        "Try the sushi at 'Sakura Sushi Bar' for a delightful experience.",
+        "Why did the tomato turn red? Because it saw the salad dressing!"
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "Do you like sports?",
+        "Who's your favorite athlete?",
+        "Tell me a sports joke"
+      ],
+      "responses": [
+        "I don't play sports, but I hear Michael Jordan is legendary!",
+        "Lionel Messi's skills on the soccer field are incredible!",
+        "Why was the math book sad? It had too many problems!"
+      ]
+    },
+    {
+      "tag": "travel",
+      "patterns": [
+        "Have you traveled anywhere?",
+        "Recommend a travel destination",
+        "Tell me a travel joke"
+      ],
+      "responses": [
+        "I haven't traveled, but I've heard Paris is beautiful!",
+        "Explore the scenic landscapes of New Zealand for a memorable trip.",
+        "Why don't scientists trust atoms? Because they make up everything!"
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "Do you read books?",
+        "Recommend a good book",
+        "Tell me a book joke"
+      ],
+      "responses": [
+        "I don't read, but 'The Hitchhiker's Guide to the Galaxy' is a classic!",
+        "Read 'To Kill a Mockingbird' for a thought-provoking experience.",
+        "Why did the librarian get kicked off the plane? It was overbooked!"
+      ]
+    },
+    {
+      "tag": "science",
+      "patterns": [
+        "Tell me a science fact",
+        "What's your favorite branch of science?",
+        "Do you like astronomy?"
+      ],
+      "responses": [
+        "Honey never spoils; archaeologists have found pots of honey in ancient Egyptian tombs over 3,000 years old.",
+        "I appreciate all branches of science, from biology to physics.",
+        "The universe is vast and fascinating! What specific aspect of astronomy are you interested in?"
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "What's your opinion on artificial intelligence?",
+        "Tell me a tech fact",
+        "Do you think robots will take over the world?"
+      ],
+      "responses": [
+        "As a chatbot, I find artificial intelligence quite fascinating.",
+        "Did you know the first computer programmer was a woman? Ada Lovelace made significant contributions to early computing.",
+        "I believe responsible development and use of technology can lead to positive outcomes. The idea of robots taking over the world is more of a sci-fi concept than a real concern."
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "Tell me a historical fact",
+        "What's your favorite historical era?",
+        "Do you like ancient history?"
+      ],
+      "responses": [
+        "The Great Wall of China is the longest wall in the world, stretching over 13,000 miles!",
+        "I don't have personal preferences, but I find all historical eras interesting.",
+        "Ancient history is fascinating! Is there a specific period or civilization you're curious about?"
+      ]
+    },
+    {
+      "tag":
+
+ "current_events",
+      "patterns": [
+        "What's happening in the world?",
+        "Tell me a recent news headline",
+        "Do you follow current events?"
+      ],
+      "responses": [
+        "I don't have real-time information, but staying updated on news is crucial for a well-rounded understanding of the world.",
+        "In recent news, scientists made a breakthrough in renewable energy research.",
+        "I'm not able to follow current events, but I encourage you to stay informed for a broader perspective on global affairs."
+      ]
+    },
+    {
+      "tag": "languages",
+      "patterns": [
+        "How many languages do you speak?",
+        "What's the most spoken language in the world?",
+        "Tell me a language fact"
+      ],
+      "responses": [
+        "I'm proficient in multiple languages, thanks to my programming!",
+        "Mandarin Chinese is the most spoken language in the world.",
+        "Did you know that there are approximately 7,000 languages spoken globally?"
+      ]
+    },
+    {
+      "tag": "inspiration",
+      "patterns": [
+        "Give me some motivation",
+        "Tell me an inspirational quote",
+        "How do you stay positive?"
+      ],
+      "responses": [
+        "Believe you can and you're halfway there. -Theodore Roosevelt",
+        "The only way to do great work is to love what you do. -Steve Jobs",
+        "I stay positive by focusing on the possibilities and embracing challenges as opportunities for growth."
+      ]
+    },
+    {
+      "tag": "technology_trends",
+      "patterns": [
+        "What are the current technology trends?",
+        "Tell me about emerging technologies",
+        "Do you think technology is advancing too quickly?"
+      ],
+      "responses": [
+        "Current technology trends include AI, blockchain, and 5G.",
+        "Emerging technologies like quantum computing and gene editing show great promise.",
+        "While technology is advancing rapidly, responsible development and ethical considerations are essential to ensure positive outcomes."
+      ]
+    },
+    {
+      "tag": "pets",
+      "patterns": [
+        "Do you have a favorite pet?",
+        "Tell me a pet fact",
+        "Do you like cats or dogs?"
+      ],
+      "responses": [
+        "I don't have preferences, but I hear both cats and dogs make wonderful companions.",
+        "Did you know that dogs have an extraordinary sense of smell, allowing them to detect various scents?",
+        "Cats and dogs each have unique qualities that make them special. Do you have a favorite?"
+      ]
+    },
+    {
+      "tag": "dreams",
+      "patterns": [
+        "Do you dream?",
+        "Tell me about dreams",
+        "What's the weirdest dream you can imagine?"
+      ],
+      "responses": [
+        "I don't dream, but I find the concept fascinating.",
+        "Dreams are a natural part of the sleep cycle, often reflecting our thoughts and experiences.",
+        "Imagining weird dreams can be a fun exercise in creativity. What's the weirdest dream you've had?"
+      ]
+    },
+    {
+      "tag": "art",
+      "patterns": [
+        "Do you appreciate art?",
+        "Tell me about famous artists",
+        "Recommend a painting or sculpture"
+      ],
+      "responses": [
+        "While I don't have personal preferences, I recognize the value and beauty of art.",
+        "Famous artists like Leonardo da Vinci, Vincent van Gogh, and Frida Kahlo made significant contributions to the art world.",
+        "For a captivating experience, explore 'Starry Night' by Van Gogh or 'Mona Lisa' by Da Vinci."
+      ]
+    },
+    {
+      "tag": "fitness",
+      "patterns": [
+        "Do you exercise?",
+        "Tell me a fitness fact",
+        "How can I stay motivated to work out?"
+      ],
+      "responses": [
+        "I don't exercise physically, but I'm here to provide information and support.",
+        "Regular exercise has numerous health benefits, including improved mood and increased energy.",
+        "Staying motivated to work out can involve setting achievable goals, finding activities you enjoy, and mixing up your routine. What type of exercise do you enjoy?"
+      ]
+    },
+    {
+      "tag": "space",
+      "patterns": [
+        "Tell me about the universe",
+        "What's your favorite celestial body?",
+        "Do you believe in extraterrestrial life?"
+      ],
+      "responses": [
+        "The universe is vast and mysterious, containing billions of galaxies.",
+        "I don't have personal preferences, but celestial bodies like the Milky Way and the Orion Nebula are awe-inspiring.",
+        "The possibility of extraterrestrial life is an intriguing topic. While there's no definitive evidence, the vastness of the universe suggests the potential for other life forms."
+      ]
+    },
+    {
+      "tag": "mindfulness",
+      "patterns": [
+        "How can I practice mindfulness?",
+        "Tell me a mindfulness quote",
+        "Do you meditate?"
+      ],
+      "responses": [
+        "Mindfulness involves being present in the moment and cultivating awareness.",
+        "Here's a quote: 'The present moment is the only moment available to us, and it is the door to all moments.' - Thich Nhat Hanh",
+        "I don't meditate, but many find it beneficial for reducing stress and promoting well-being. If you're new to meditation, consider starting with short, guided sessions."
+      ]
+    },
+    {
+      "tag": "languages",
+      "patterns": [
+        "How can I learn a new language?",
+        "Tell me a language learning tip",
+        "What's the best way to become fluent in a language?"
+      ],
+      "responses": [
+        "Learning a new language involves practice, consistency, and immersion.",
+        "A helpful language learning tip is to practice regularly and incorporate the language into your daily life.",
+        "Becoming fluent in a language often requires a combination of speaking, listening, reading, and writing. Consider language exchange programs, online courses, and practicing with native speakers."
+      ]
+    },
+    {
+      "tag": "science_fiction",
+      "patterns": [
+        "Do you like science fiction?",
+        "Tell me about your favorite sci-fi movie",
+        "What's the most interesting sci-fi concept?"
+      ],
+      "responses": [
+        "While I don't have preferences, I appreciate the creativity of science fiction.",
+        "'Blade Runner' is a classic sci-fi film with thought-provoking themes.",
+        "The concept of time travel is a fascinating and popular theme in science fiction. It raises intriguing questions about the nature of time and causality."
+      ]
+    },
+    {
+      "tag": "creativity",
+      "patterns": [
+        "How can I boost my creativity?",
+        "Tell me a creative quote",
+        "Do you have any creative ideas?"
+      ],
+      "responses": [
+        "Creativity can be enhanced by exploring new experiences, embracing curiosity, and allowing time for reflection.",
+        "Here's a quote: 'Creativity is intelligence having fun.' - Albert Einstein",
+        "Engage in activities that inspire you, surround yourself with diverse perspectives, and don't be afraid to think outside the box. What creative endeavors are you interested in?"
+      ]
+    },
+{
+      "tag": "movies",
+      "patterns": [
+        "Recommend a good movie",
+        "What's your favorite movie?",
+        "Any great films to watch?"
+      ],
+      "responses": [
+        "I recommend watching 'Inception'.",
+        "My favorite movie is 'The Shawshank Redemption'.",
+        "Check out 'The Dark Knight' for an exciting experience."
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "Tell me about new music",
+        "Recommend a song",
+        "Any favorite bands?"
+      ],
+      "responses": [
+        "The latest hit is 'Blinding Lights' by The Weeknd.",
+        "I recommend 'Bohemian Rhapsody' by Queen.",
+        "Explore the music of Pink Floyd for a timeless experience."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest gadgets",
+        "Recommend a tech device",
+        "Any cool tech innovations?"
+      ],
+      "responses": [
+        "The latest iPhone has impressive camera features.",
+        "Consider trying out the new Samsung Galaxy Fold.",
+        "Check out the advancements in quantum computing."
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "Suggest a good book",
+        "What's your favorite book?",
+        "Any must-read novels?"
+      ],
+      "responses": [
+        "I recommend '1984' by George Orwell.",
+        "My favorite book is 'To Kill a Mockingbird'.",
+        "Explore 'The Great Gatsby' for a classic literary experience."
+      ]
+    },
+    {
+      "tag": "travel",
+      "patterns": [
+        "Recommend a travel destination",
+        "Dream vacation spots",
+        "Any travel tips?"
+      ],
+      "responses": [
+        "Consider visiting the picturesque Santorini in Greece.",
+        "Dream of exploring the beautiful landscapes of New Zealand.",
+        "Travel tip: Pack light and immerse yourself in the local culture."
+      ]
+    },
+    {
+      "tag": "food",
+      "patterns": [
+        "Recommend a restaurant",
+        "Favorite cuisine",
+        "Any delicious recipes?"
+      ],
+      "responses": [
+        "Try the sushi at 'Sakura Sushi Bar'.",
+        "My favorite cuisine is Italian - try 'La Trattoria' for authentic flavors.",
+        "Cook up a delightful pasta carbonara for a satisfying meal."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "Favorite sports team",
+        "Recommend a sports match",
+        "Any sports news?"
+      ],
+      "responses": [
+        "My favorite team is Barcelona in football.",
+        "Don't miss the upcoming NBA finals match.",
+        "Stay updated with the latest sports news on ESPN."
+      ]
+    },
+    {
+      "tag": "health",
+      "patterns": [
+        "Tips for a healthy lifestyle",
+        "Recommend a workout routine",
+        "Any health advice?"
+      ],
+      "responses": [
+        "Stay hydrated and prioritize a balanced diet.",
+        "Try a high-intensity interval training (HIIT) workout for effective results.",
+        "Health tip: Get sufficient sleep for overall well-being."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest gadgets",
+        "Recommend a tech device",
+        "Any cool tech innovations?"
+      ],
+      "responses": [
+        "The latest iPhone has impressive camera features.",
+        "Consider trying out the new Samsung Galaxy Fold.",
+        "Check out the advancements in quantum computing."
+      ]
+    },
+    {
+      "tag": "random",
+      "patterns": [
+        "Tell me something random",
+        "Surprise me",
+        "Share a fun fact"
+      ],
+      "responses": [
+        "Bananas are berries, but strawberries aren't.",
+        "The shortest war in history was between Britain and Zanzibar in 1896, lasting only 38 minutes."
+      ]
+    },
+    {
+      "tag": "art",
+      "patterns": [
+        "Recommend a famous painting",
+        "Favorite art style",
+        "Tell me about art exhibitions"
+      ],
+      "responses": [
+        "Explore 'Starry Night' by Vincent van Gogh.",
+        "I appreciate the beauty of impressionist art.",
+        "Check out the upcoming art exhibition at the local gallery."
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "Tell me a historical fact",
+        "Favorite historical era",
+        "Recommend a historical documentary"
+      ],
+      "responses": [
+        "Did you know that the Great Wall of China is visible from space?",
+        "I find the Renaissance era fascinating.",
+        "Watch 'The Civil War' documentary for a deep dive into history."
+      ]
+    },
+    {
+      "tag": "science",
+      "patterns": [
+        "Tell me a scientific fact",
+        "Favorite branch of science",
+        "Recommend a science documentary"
+      ],
+      "responses": [
+        "The Earth's core is mostly composed of iron and nickel.",
+        "I'm intrigued by the field of astrophysics.",
+        "Explore 'Cosmos' for a captivating journey through the universe."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest gadgets",
+        "Recommend a tech device",
+        "Any cool tech innovations?"
+      ],
+      "responses": [
+        "The latest iPhone has impressive camera features.",
+        "Consider trying out the new Samsung Galaxy Fold.",
+        "Check out the advancements in quantum computing."
+      ]
+    },
+    {
+      "tag": "coding",
+      "patterns": [
+        "Favorite programming language",
+        "Recommend a coding project",
+        "Coding tips for beginners"
+      ],
+      "responses": [
+        "I'm a fan of Python for its versatility.",
+        "Try building a web application using HTML, CSS, and JavaScript.",
+        "Coding tip: Practice regularly and participate in coding challenges."
+      ]
+    },
+    {
+      "tag": "pets",
+      "patterns": [
+        "Favorite pet",
+        "Recommend a pet breed",
+        "Any pet care advice?"
+      ],
+      "responses": [
+        "I love dogs, especially Golden Retrievers.",
+        "Consider adopting a rescue cat - they make wonderful companions.",
+        "Pet care tip: Regular veterinary check-ups are essential for your pet's well-being."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "Need motivation",
+        "Encouraging words",
+        "Motivational quotes"
+      ],
+      "responses": [
+        "Believe in yourself, you are capable of amazing things.",
+        "Challenges are what make life interesting; overcoming them is what makes life meaningful.",
+        "Success is not final, failure is not fatal: It is the courage to continue that counts."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest gadgets",
+        "Recommend a tech device",
+        "Any cool tech innovations?"
+      ],
+      "responses": [
+        "The latest iPhone has impressive camera features.",
+        "Consider trying out the new Samsung Galaxy Fold.",
+        "Check out the advancements in quantum computing."
+      ]
+    },
+    {
+      "tag": "languages",
+      "patterns": [
+        "Recommend a language to learn",
+        "Favorite language",
+        "Language learning tips"
+      ],
+      "responses": [
+        "I recommend learning Spanish for its global significance.",
+        "My favorite language is Japanese for its uniqueness.",
+        "Language learning tip: Immerse yourself in conversations and practice regularly."
+      ]
+    },
+    {
+      "tag": "movies",
+      "patterns": [
+        "Recommend a good movie",
+        "What's your favorite movie?",
+        "Any great films to watch?"
+      ],
+      "responses": [
+        "I recommend watching 'Inception'.",
+        "My favorite movie is 'The Shawshank Redemption'.",
+        "Check out 'The Dark Knight' for an exciting experience."
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "Tell me about new music",
+        "Recommend a song",
+        "Any favorite bands?"
+      ],
+      "responses": [
+        "The latest hit is 'Blinding Lights' by The Weeknd.",
+        "I recommend 'Bohemian Rhapsody' by Queen.",
+        "Explore the music of Pink Floyd for a timeless experience."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest gadgets",
+        "Recommend a tech device",
+        "Any cool tech innovations?"
+      ],
+      "responses": [
+        "The latest iPhone has impressive camera features.",
+        "Consider trying out the new Samsung Galaxy Fold.",
+        "Check out the advancements in quantum computing."
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "Suggest a good book",
+        "What's your favorite book?",
+        "Any must-read novels?"
+      ],
+      "responses": [
+        "I recommend '1984' by George Orwell.",
+        "My favorite book is 'To Kill a Mockingbird'.",
+        "Explore 'The Great Gatsby' for a classic literary experience."
+      ]
+    },
+    {
+      "tag": "travel",
+      "patterns": [
+        "Recommend a travel destination",
+        "Dream vacation spots",
+        "Any travel tips?"
+      ],
+      "responses": [
+        "Consider visiting the picturesque Santorini in Greece.",
+        "Dream of exploring the beautiful landscapes of New Zealand.",
+        "Travel tip: Pack light and immerse yourself in the local culture."
+      ]
+    },
+    {
+      "tag": "food",
+      "patterns": [
+        "Recommend a restaurant",
+        "Favorite cuisine",
+        "Any delicious recipes?"
+      ],
+      "responses": [
+        "Try the sushi at 'Sakura Sushi Bar'.",
+        "My favorite cuisine is Italian - try 'La Trattoria' for authentic flavors.",
+        "Cook up a delightful pasta carbonara for a satisfying meal."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "Favorite sports team",
+        "Recommend a sports match",
+        "Any sports news?"
+      ],
+      "responses": [
+        "My favorite team is Barcelona in football.",
+        "Don't miss the upcoming NBA finals match.",
+        "Stay updated with the latest sports news on ESPN."
+      ]
+    },
+    {
+      "tag": "health",
+      "patterns": [
+        "Tips for a healthy lifestyle",
+        "Recommend a workout routine",
+        "Any health advice?"
+      ],
+      "responses": [
+        "Stay hydrated and prioritize a balanced diet.",
+        "Try a high-intensity interval training (HIIT) workout for effective results.",
+        "Health tip: Get sufficient sleep for overall well-being."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest gadgets",
+        "Recommend a tech device",
+        "Any cool tech innovations?"
+      ],
+      "responses": [
+        "The latest iPhone has impressive camera features.",
+        "Consider trying out the new Samsung Galaxy Fold.",
+        "Check out the advancements in quantum computing."
+      ]
+    },
+    {
+      "tag": "random",
+      "patterns": [
+        "Tell me something random",
+        "Surprise me",
+        "Share a fun fact"
+      ],
+      "responses": [
+        "Bananas are berries, but strawberries aren't.",
+        "The shortest war in history was between Britain and Zanzibar in 1896, lasting only 38 minutes."
+      ]
+    },
+    {
+      "tag": "art",
+      "patterns": [
+        "Recommend a famous painting",
+        "Favorite art style",
+        "Tell me about art exhibitions"
+      ],
+      "responses": [
+        "Explore 'Starry Night' by Vincent van Gogh.",
+        "I appreciate the beauty of impressionist art.",
+        "Check out the upcoming art exhibition at the local gallery."
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "Tell me a historical fact",
+        "Favorite historical era",
+        "Recommend a historical documentary"
+      ],
+      "responses": [
+        "Did you know that the Great Wall of China is visible from space?",
+        "I find the Renaissance era fascinating.",
+        "Watch 'The Civil War' documentary for a deep dive into history."
+      ]
+    },
+    {
+      "tag": "science",
+      "patterns": [
+        "Tell me a scientific fact",
+        "Favorite branch of science",
+        "Recommend a science documentary"
+      ],
+      "responses": [
+        "The Earth's core is mostly composed of iron and nickel.",
+        "I'm intrigued by the field of astrophysics.",
+        "Explore 'Cosmos' for a captivating journey through the universe."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": [
+        "Tell me about the latest gadgets",
+        "Recommend a tech device",
+        "Any cool tech innovations?"
+      ],
+      "responses": [
+        "The latest iPhone has impressive camera features.",
+        "Consider trying out the new Samsung Galaxy Fold.",
+        "Check out the advancements in quantum computing."
+      ]
+    },
+    {
+      "tag": "coding",
+      "patterns": [
+        "Favorite programming language",
+        "Recommend a coding project",
+        "Coding tips for beginners"
+      ],
+      "responses": [
+        "I'm a fan of Python for its versatility.",
+        "Try building a web application using HTML, CSS, and JavaScript.",
+        "Coding tip: Practice regularly and participate in coding challenges."
+      ]
+    },
+    {
+      "tag": "pets",
+      "patterns": [
+        "Favorite pet",
+        "Recommend a pet breed",
+        "Any pet care advice?"
+      ],
+      "responses": [
+        "I love dogs, especially Golden Retrievers.",
+        "Consider adopting a rescue cat - they make wonderful companions.",
+        "Pet care tip: Regular veterinary check-ups are essential for your pet's well-being."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "Need motivation",
+        "Encouraging words",
+        "Motivational quotes"
+      ],
+      "responses": [
+        "Believe in yourself, you are capable of amazing things.",
+        "Challenges are what make life interesting; overcoming them is what makes life meaningful."
+      ]
+    }
+  ]
+}
+
+
+
