@@ -25,7 +25,11 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Bot"
+# bot_name = "Bot"
+bot_name=input("Enter Bot Name (Optional): ")
+if not bot_name:
+    bot_name = "Bot"
+    
 print("Let's chat! (type 'quit' to exit)")
 while True:
     # sentence = "do you use credit cards?"
